@@ -49,14 +49,13 @@ const MapPage = () => {
       {/* THANH ĐIỀU HƯỚNG (NAVBAR) */}
       <header className="top-navbar">
         <div className="nav-brand">⚡ EV SmartCharge</div>
-        <button className="mobile-menu-btn" onClick={() => setIsNavOpen(!isNavOpen)}>
-          ☰
-        </button>
+        <button className="mobile-menu-btn" onClick={() => setIsNavOpen(!isNavOpen)}>☰</button>
         <nav className={`nav-links ${isNavOpen ? 'active' : ''}`}>
-          <button className="nav-btn">Lịch sử đặt chỗ</button>
-          <button className="nav-btn">Hỗ trợ</button>
-          <button className="nav-btn">Tài khoản</button>
-          <Link to="/admin" className="nav-btn primary">Vào trang Quản trị</Link>
+          {/* Đã bọc bằng thẻ Link và thêm textDecoration: 'none' để bỏ gạch chân */}
+          <Link to="/history" className="nav-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>Lịch sử đặt chỗ</Link>
+          <Link to="/vehicles" className="nav-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>Phương tiện của tôi</Link>
+          <Link to="/login" className="nav-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>Đăng nhập</Link>
+          <Link to="/admin" className="nav-btn primary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>Vào trang Quản trị</Link>
         </nav>
       </header>
 
