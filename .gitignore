@@ -1,0 +1,35 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.python-version
+
+# Virtual environments
+ev_env/
+.venv/
+venv/
+ENV/
+
+# Django local files
+*.log
+local_settings.py
+.env
+.env.*
+!.env.example
+db.sqlite3
+media/
+staticfiles/
+
+# Node / Vite
+node_modules/
+dist/
+coverage/
+*.local
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
